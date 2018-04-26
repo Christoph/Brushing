@@ -1,3 +1,9 @@
 <template>
-  <h1>${message}</h1>
+  <require from="bootstrap/dist/css/bootstrap.css"></require>
+
+  <aup-tabs class="nav-tabs" tabs.bind="tabs"></aup-tabs>
+  <aup-tab-content>
+    <aup-tab-pane tab="tab1"><compose view-model="./usecase1/uc1"></compose></aup-tab-pane>
+    <aup-tab-pane tab="tab2"><compose view-model="./usecase2/uc2"></compose></aup-tab-pane>
+  </aup-tab-content>
 </template>
